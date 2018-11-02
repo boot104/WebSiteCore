@@ -12,7 +12,8 @@ namespace WebSiteCore.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = SampleData.Orders;
+            return View(model);
         }
 
         public IActionResult About()
